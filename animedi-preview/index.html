@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dierenartsenpraktijk Animedi — gespecialiseerde zorg voor kleine huisdieren, paarden en landbouwdieren in Nevele en Lotenhulle."
+    />
+    <meta name="theme-color" content="#23463d" />
+    <title>Animedi | Uw dier, onze zorg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ga naar de inhoud</a>
+
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <p>Voor spoedgevallen zijn onze afdelingen telefonisch bereikbaar.</p>
+        <a href="#contact">Contact &amp; openingsuren <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#" aria-label="Animedi home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M24 39c-8.4 0-14-4.7-14-11.2 0-5.4 4.5-8.7 8.1-8.7 2.3 0 4.1 1.2 5.9 3.3 1.8-2.1 3.6-3.3 5.9-3.3 3.6 0 8.1 3.3 8.1 8.7C38 34.3 32.4 39 24 39Z"/>
+              <circle cx="12.5" cy="14" r="4.2"/>
+              <circle cx="22" cy="10.5" r="4.2"/>
+              <circle cx="35.5" cy="14" r="4.2"/>
+            </svg>
+          </span>
+          <span class="brand__name">animedi</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu openen</span>
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Hoofdnavigatie">
+          <a href="#afdelingen">Afdelingen</a>
+          <a href="#praktijk">Onze praktijk</a>
+          <a href="#zorg">Onze aanpak</a>
+          <a href="#contact">Contact</a>
+          <a class="button button--small" href="#afspraak">Maak een afspraak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero__image" role="img" aria-label="Een hond in het zachte daglicht"></div>
+        <div class="hero__shade"></div>
+        <div class="container hero__content">
+          <p class="eyebrow eyebrow--light reveal">Dierenartsenpraktijk in Nevele &amp; Lotenhulle</p>
+          <h1 class="reveal">Uw dier.<br /><em>Onze zorg.</em></h1>
+          <p class="hero__intro reveal">
+            Persoonlijke, deskundige diergeneeskunde voor elk dier — van trouwe huisgenoot
+            tot krachtige viervoeter en landbouwdier.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="button button--light" href="#afspraak">Maak een afspraak</a>
+            <a class="text-link text-link--light" href="#afdelingen">Ontdek onze afdelingen <span>↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section" id="praktijk">
+        <div class="container intro__grid">
+          <div>
+            <p class="eyebrow reveal">Welkom bij Animedi</p>
+            <h2 class="reveal">Samen zorgen we voor wat u <em>dierbaar</em> is.</h2>
+          </div>
+          <div class="intro__copy reveal">
+            <p class="lead">
+              Animedi is een groepspraktijk waar ervaring, specialisatie en oprechte
+              betrokkenheid samenkomen.
+            </p>
+            <p>
+              Elke dierenarts verdiept zich in de zorg voor een specifieke diersoort. Zo
+              krijgt u steeds de juiste expertise, binnen een vertrouwde praktijk die uw
+              dier kent.
+            </p>
+            <a class="text-link" href="#zorg">Lees meer over onze aanpak <span>→</span></a>
+          </div>
+        </div>
+        <div class="container stats reveal">
+          <div><strong>11</strong><span>dierenartsen</span></div>
+          <div><strong>3</strong><span>gespecialiseerde afdelingen</span></div>
+          <div><strong>2</strong><span>locaties in de regio</span></div>
+          <div><strong>24/7</strong><span>wachtdienst per afdeling</span></div>
+        </div>
+      </section>
+
+      <section class="departments section" id="afdelingen">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow reveal">Onze afdelingen</p>
+            <h2 class="reveal">Zorg op maat van <em>elk dier.</em></h2>
+          </div>
+          <p class="reveal">Kies een afdeling voor contactgegevens, bereikbaarheid en afspraken.</p>
+        </div>
+
+        <div class="container department-grid">
+          <article class="department-card department-card--featured reveal">
+            <img src="assets/images/small-animals.jpg" alt="Golden retriever in de natuur" />
+            <div class="department-card__overlay"></div>
+            <div class="department-card__content">
+              <span class="department-card__number">01</span>
+              <div>
+                <p class="eyebrow eyebrow--light">Nevele</p>
+                <h3>Kleine huisdieren</h3>
+                <p>Preventieve zorg, consultaties, diagnostiek en behandeling voor uw huisdier.</p>
+                <button class="card-link" type="button" data-dialog="small-animals">
+                  Bekijk afdeling <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="department-card reveal">
+            <img src="assets/images/horses.jpg" alt="Paard in een groen landschap" />
+            <div class="department-card__overlay"></div>
+            <div class="department-card__content">
+              <span class="department-card__number">02</span>
+              <div>
+                <p class="eyebrow eyebrow--light">Nevele</p>
+                <h3>Paarden</h3>
+                <p>Gespecialiseerde, mobiele en klinische zorg voor recreatie- en sportpaarden.</p>
+                <button class="card-link" type="button" data-dialog="horses">
+                  Bekijk afdeling <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="department-card reveal">
+            <img src="assets/images/farm.jpg" alt="Koe in een weide" />
+            <div class="department-card__overlay"></div>
+            <div class="department-card__content">
+              <span class="department-card__number">03</span>
+              <div>
+                <p class="eyebrow eyebrow--light">Lotenhulle</p>
+                <h3>Landbouwdieren</h3>
+                <p>Praktische diergeneeskunde en bedrijfsbegeleiding met een eigen wachtdienst.</p>
+                <button class="card-link" type="button" data-dialog="farm">
+                  Bekijk afdeling <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="care section" id="zorg">
+        <div class="container care__grid">
+          <div class="care__visual reveal">
+            <img src="assets/images/hero-dog.jpg" alt="Zorgzame aandacht voor een hond" />
+            <div class="care__quote">
+              <span aria-hidden="true">“</span>
+              <p>Goede zorg begint met luisteren — naar mens én dier.</p>
+            </div>
+          </div>
+          <div class="care__content">
+            <p class="eyebrow reveal">Persoonlijk en met passie</p>
+            <h2 class="reveal">Deskundige zorg, met aandacht <em>voor het geheel.</em></h2>
+            <p class="reveal">
+              We combineren jarenlange ervaring met continue bijscholing. Zo kunnen we snel
+              schakelen, helder adviseren en voor ieder dier een passend zorgtraject uitwerken.
+            </p>
+            <div class="care-list">
+              <div class="care-item reveal">
+                <span>01</span>
+                <div><h3>Gespecialiseerde teams</h3><p>De juiste expertise voor elke diersoort, op één vertrouwd adres.</p></div>
+              </div>
+              <div class="care-item reveal">
+                <span>02</span>
+                <div><h3>Duidelijke communicatie</h3><p>We nemen tijd voor uw vragen en leggen elke stap begrijpelijk uit.</p></div>
+              </div>
+              <div class="care-item reveal">
+                <span>03</span>
+                <div><h3>Continuïteit van zorg</h3><p>Met een eigen wachtdienst per afdeling staan we voor u klaar.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment section" id="afspraak">
+        <div class="container appointment__inner reveal">
+          <div>
+            <p class="eyebrow eyebrow--light">We helpen u graag verder</p>
+            <h2>Maak een afspraak bij <em>Animedi.</em></h2>
+          </div>
+          <div>
+            <p>Kies de juiste afdeling. Zo komt u meteen bij het team dat u het beste kan helpen.</p>
+            <div class="appointment__buttons">
+              <a class="button button--light" href="tel:+3293210240">Kleine huisdieren</a>
+              <button class="button button--outline-light" type="button" data-dialog="contact-choice">
+                Andere afdeling
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow reveal">Contact</p>
+            <h2 class="reveal">Dichtbij wanneer het <em>nodig is.</em></h2>
+          </div>
+          <p class="reveal">Voor dringende gevallen zijn de afdelingen rechtstreeks bereikbaar.</p>
+        </div>
+        <div class="container contact-grid">
+          <article class="contact-card reveal">
+            <p class="eyebrow">Nevele</p>
+            <h3>Kleine huisdieren &amp; paarden</h3>
+            <address>Biebuyckstraat 62<br />9850 Deinze (Nevele)</address>
+            <a href="tel:+3293210240">09 321 02 40</a>
+            <a href="mailto:kleinehuisdieren@animedi.be">kleinehuisdieren@animedi.be</a>
+            <a class="text-link" href="https://maps.google.com/?q=Biebuyckstraat+62+9850+Deinze" target="_blank" rel="noreferrer">Bekijk op kaart <span>↗</span></a>
+          </article>
+          <article class="contact-card reveal">
+            <p class="eyebrow">Lotenhulle</p>
+            <h3>Landbouwdieren</h3>
+            <address>Nevelestraat 125<br />9880 Lotenhulle (Aalter)</address>
+            <a href="tel:+3292215795">09 221 57 95</a>
+            <a href="mailto:landbouwdieren@animedi.be">landbouwdieren@animedi.be</a>
+            <a class="text-link" href="https://maps.google.com/?q=Nevelestraat+125+9880+Lotenhulle" target="_blank" rel="noreferrer">Bekijk op kaart <span>↗</span></a>
+          </article>
+          <article class="hours-card reveal">
+            <p class="eyebrow eyebrow--light">Consultaties kleine huisdieren</p>
+            <h3>Enkel op afspraak</h3>
+            <dl>
+              <div><dt>Ma — vr</dt><dd>09:00 — 12:30<br />13:30 — 19:00</dd></div>
+              <div><dt>Zaterdag</dt><dd>09:00 — 12:00</dd></div>
+            </dl>
+            <p class="hours-card__note">Bel op werkdagen tussen 09:00 en 19:00 voor een afspraak.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__top">
+        <a class="brand brand--light" href="#">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 39c-8.4 0-14-4.7-14-11.2 0-5.4 4.5-8.7 8.1-8.7 2.3 0 4.1 1.2 5.9 3.3 1.8-2.1 3.6-3.3 5.9-3.3 3.6 0 8.1 3.3 8.1 8.7C38 34.3 32.4 39 24 39Z"/><circle cx="12.5" cy="14" r="4.2"/><circle cx="22" cy="10.5" r="4.2"/><circle cx="35.5" cy="14" r="4.2"/></svg>
+          </span>
+          <span class="brand__name">animedi</span>
+        </a>
+        <p>Uw dier, onze zorg.</p>
+      </div>
+      <div class="container footer__bottom">
+        <p>© <span id="year"></span> Animedi bv. Alle rechten voorbehouden.</p>
+        <div><a href="#">Privacy</a><a href="#">Disclaimer</a></div>
+      </div>
+    </footer>
+
+    <dialog class="department-dialog" id="department-dialog">
+      <button class="dialog-close" type="button" aria-label="Venster sluiten">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>
