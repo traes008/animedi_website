@@ -1,50 +1,65 @@
 # Animedi website
 
-This repository holds the Animedi veterinary clinic web work. The main deliverable is a **full multi-page website** in its own folder — not a page inside another app.
+The Animedi veterinary clinic website — dependency-free static HTML, CSS and JavaScript.
 
-## Sites in this repo
+This repository **is** the website. Open, edit, serve and deploy from the root of this project.
 
-| Site | Folder | What it is |
-|------|--------|------------|
-| **Animedi website** (multi-page) | [`animedi-multipage-preview/`](animedi-multipage-preview/) | Standalone multi-page site: home, three departments (team / services / photos), and contact. Open and host this folder on its own. |
-| Single-page prototype | [`animedi-preview/`](animedi-preview/) | Earlier one-page scrolling prototype. Separate from the multi-page site. |
+## Pages
 
-Both are dependency-free static HTML/CSS/JS with local assets.
-
-The multi-page site is a complete website by itself. Treat `animedi-multipage-preview/` as the project root when you open, serve, zip, or deploy it.
+- Homepage (`index.html`)
+- Kleine huisdieren — team, services, photos (`afdelingen/`)
+- Paarden — team, services, photos (`afdelingen/`)
+- Landbouwdieren — team, services, photos (`afdelingen/`)
+- Contact and appointments (`contact.html`)
 
 ## Quick start
 
 ```bash
-# Multi-page website (default)
 ./serve.sh
-# → http://127.0.0.1:8081
-
-# Single-page prototype
-./serve.sh single
-# → http://127.0.0.1:8081 (or set PORT=8080)
 ```
 
-Or serve a folder directly:
-
-```bash
-cd animedi-multipage-preview && python3 -m http.server 8081
-cd animedi-preview && python3 -m http.server 8080
-```
+Then open `http://127.0.0.1:8080`. Or double-click `index.html`.
 
 Phone on the same Wi‑Fi: see [`SERVE.md`](SERVE.md).
 
-## Share / host
+**New here / non-technical?** Read the Dutch beginner guide: [`HOW_TO.md`](HOW_TO.md) (Git, teksten, foto’s, opslaan).
 
-- **Multi-page website:** zip or upload `animedi-multipage-preview/` only. Recipient opens `index.html` or deploys that folder as the site root.
-- **Single-page prototype:** same idea for `animedi-preview/`.
+## Project layout
 
-Works on Cloudflare Pages, Netlify, GitHub Pages, AWS S3/Amplify, or any static host — point the host at the chosen folder.
+```text
+├── index.html          Home
+├── contact.html        Contact & appointments
+├── styles.css          All styling
+├── script.js           Interactions
+├── afdelingen/         Department pages
+├── assets/
+│   ├── brand/          Logo & icons
+│   └── images/         Photos (home, departments, team)
+├── scripts/            Tools to refresh galleries from folders
+├── serve.sh            Local preview server
+└── HOW_TO.md           Step-by-step guide for collaborators
+```
+
+## Update a gallery or slideshow
+
+1. Add or remove images in the relevant `assets/images/.../gallery/` or `assets/images/home/slideshow/` folder.
+2. Optionally add Dutch alt text in `scripts/image-alt-text.json`.
+3. Regenerate markup:
+
+```bash
+python3 scripts/generate-image-sections.py
+```
+
+Do not edit content between `GENERATED` comments in the HTML by hand.
+
+## Deploy
+
+Upload this whole repository folder (or clone it) to any static host — Cloudflare Pages, Netlify, GitHub Pages, etc. Point the host at the project root.
 
 ## Before production
 
-- Confirm all copy, contact details and opening hours with Animedi.
-- Connect the appointment buttons to Animedi's actual booking system.
-- Add final privacy and disclaimer pages.
-- Review image licensing / replace prototype photography with approved clinic photography.
-- Add analytics and a cookie banner only if required by the final tracking setup.
+- Confirm copy, contact details and opening hours with Animedi.
+- Connect appointment buttons to the real booking system.
+- Add privacy and disclaimer pages.
+- Review image licensing / use approved clinic photography.
+- Add analytics / cookie banner only if required.
